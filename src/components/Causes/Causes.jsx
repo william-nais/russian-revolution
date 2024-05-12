@@ -12,7 +12,6 @@ const Causes = () => {
   const [constantWarOverlay, setConstantWarOverlay] = useState(false)
   const [workingConditionsOverlay, setWorkingConditionsOverlay] = useState(false)
   const [povertyOverlay, setPovertyOverlay] = useState(false)
-  const [politicalOverlay, setPoliticalOverlay] = useState(false)
   const [tsarOverlay, setTsarOverlay] = useState(false)
 
 
@@ -53,7 +52,7 @@ const Causes = () => {
   }
 
   const causes = causesInfo.map(cause => 
-    <li key={cause.id} onClick={eval(cause.function)} style={{ cursor: "pointer" }}>
+    <li key={cause.id} style={{ cursor: "pointer" }}>
       {cause.information}
     </li>
   )
