@@ -1,3 +1,5 @@
+import { openEconomicHardshipsOverlay, openConstantWarOverlay, openWorkingConditionsOverlay, openPovertyOverlay } from './Causes.jsx';
+
 export const causesInfo = [{
     id: 0,
     information: "Economic Inequality",
@@ -52,6 +54,7 @@ export const causesInfo = [{
 }, {
     id: 3,
     information: "Rise of Revolutionary Movements",
+    function: openPovertyOverlay,
     content: (
         <>
             <div>
@@ -63,5 +66,4 @@ export const causesInfo = [{
             </div>
         </>
     ),
-    function: openPovertyOverlay,
 }]
