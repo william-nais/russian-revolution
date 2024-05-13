@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Overlay from '../Overlay';
 
@@ -8,51 +8,8 @@ import { causesInfo } from './causes-data'
 
 const Causes = () => {
 
-  const [economicHardshipsOverlay, setEconomicHardshipsOverlay] = useState(false)
-  const [constantWarOverlay, setConstantWarOverlay] = useState(false)
-  const [workingConditionsOverlay, setWorkingConditionsOverlay] = useState(false)
-  const [povertyOverlay, setPovertyOverlay] = useState(false)
-  const [tsarOverlay, setTsarOverlay] = useState(false)
-
-
-  {/* EconomicHardships */}
-  const openEconomicHardshipsOverlay = () => {
-    setEconomicHardshipsOverlay(true);
-  }
-
-  const closeEconomicHardshipsOverlay = () => {
-    setEconomicHardshipsOverlay(false);
-  }
-
-  {/* ConstantWar */}
-  const openConstantWarOverlay = () => {
-    setConstantWarOverlay(true);
-  }
-
-  const closeConstantWarOverlay = () => {
-    setConstantWarOverlay(false);
-  }
-
-  {/* WorkingConditions */}
-  const openWorkingConditionsOverlay = () => {
-    setWorkingConditionsOverlay(true);
-  }
-
-  const closeWorkingConditionsOverlay = () => {
-    setWorkingConditionsOverlay(false);
-  }
-
-  {/* Poverty */}
-  const openPovertyOverlay = () => {
-    setPovertyOverlay(true);
-  }
-
-  const closePovertyOverlay = () => {
-    setPovertyOverlay(false);
-  }
-
   const causes = causesInfo.map(cause => 
-    <li key={cause.id} onClick={Function(cause.function)} style={{ cursor: "pointer" }}>
+    <li key={cause.id} onClick={() => window[cause.function]()} style={{ cursor: "pointer" }}>
       {cause.information}
     </li>
   )
