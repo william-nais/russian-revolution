@@ -53,7 +53,7 @@ const Causes = () => {
 
 
   const causes = causesInfo.map(cause => 
-    <li key={cause.id} onClick={() => window[cause.function]()} style={{ cursor: "pointer" }}>
+    <li key={cause.id} onClick={cause.function} style={{ cursor: "pointer" }}>
       {cause.information}
     </li>
   )
