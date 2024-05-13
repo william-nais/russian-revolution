@@ -3,7 +3,7 @@ import { openEconomicHardshipsOverlay, openConstantWarOverlay, openWorkingCondit
 export const causesInfo = [{
     id: 0,
     information: "Economic Inequality",
-    function: openEconomicHardshipsOverlay,
+    function: {openEconomicHardshipsOverlay},
     content: (
         <>
             <img src="https://socialistworker.co.uk/wp-content/uploads/images1412/Image/2017/2563/russian-peasants-1917.jpg" style={{ width: "350px", height: "auto", float: "right", padding: "10px"}}/>
@@ -21,7 +21,7 @@ export const causesInfo = [{
 }, {
     id: 1,
     information: "WWI",
-    function: openConstantWarOverlay,
+    function: {openConstantWarOverlay},
     content: (
         <>
             <img src="https://cdn.britannica.com/71/64871-050-8548CA22/Eastern-Front-troops-Germany-Austria-Hungary-Turkey-Russia.jpg" style={{ width: "350px", height: "auto", float: "right", padding: "10px"}}/>
@@ -40,7 +40,7 @@ export const causesInfo = [{
 }, {
     id: 2,
     information: "Military Defeats and Loss of Confidence",
-    function: openWorkingConditionsOverlay,
+    function: {openWorkingConditionsOverlay},
     content: (
         <>
             <img src="https://cdn.britannica.com/59/201059-050-E683B0C5/troops-Japanese-Russo-Japanese-War.jpg" style={{ width: "350px", height: "auto", float: "right", padding: "10px"}}/>
@@ -54,7 +54,7 @@ export const causesInfo = [{
 }, {
     id: 3,
     information: "Rise of Revolutionary Movements",
-    function: openPovertyOverlay,
+    function: {openPovertyOverlay},
     content: (
         <>
             <div>
