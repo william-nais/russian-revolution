@@ -1,7 +1,7 @@
 export const causesInfo = [{
     id: 0,
     information: "Economic Inequality",
-    function: 'openEconomicHardshipsOverlay',
+    function: openEconomicHardshipsOverlay,
     content: (
         <>
             <img src="https://socialistworker.co.uk/wp-content/uploads/images1412/Image/2017/2563/russian-peasants-1917.jpg" style={{ width: "350px", height: "auto", float: "right", padding: "10px"}}/>
