@@ -1,3 +1,49 @@
+import React, { useState } from 'react';
+
+const [economicHardshipsOverlay, setEconomicHardshipsOverlay] = useState(false)
+const [constantWarOverlay, setConstantWarOverlay] = useState(false)
+const [workingConditionsOverlay, setWorkingConditionsOverlay] = useState(false)
+const [povertyOverlay, setPovertyOverlay] = useState(false)
+const [tsarOverlay, setTsarOverlay] = useState(false)
+
+
+  {/* EconomicHardships */}
+  const openEconomicHardshipsOverlay = () => {
+    setEconomicHardshipsOverlay(true);
+  }
+
+  const closeEconomicHardshipsOverlay = () => {
+    setEconomicHardshipsOverlay(false);
+  }
+
+  {/* ConstantWar */}
+  const openConstantWarOverlay = () => {
+    setConstantWarOverlay(true);
+  }
+
+  const closeConstantWarOverlay = () => {
+    setConstantWarOverlay(false);
+  }
+
+  {/* WorkingConditions */}
+  const openWorkingConditionsOverlay = () => {
+    setWorkingConditionsOverlay(true);
+  }
+
+  const closeWorkingConditionsOverlay = () => {
+    setWorkingConditionsOverlay(false);
+  }
+
+  {/* Poverty */}
+  const openPovertyOverlay = () => {
+    setPovertyOverlay(true);
+  }
+
+  const closePovertyOverlay = () => {
+    setPovertyOverlay(false);
+  }
+
+
 export const causesInfo = [{
     id: 0,
     information: "Economic Inequality",
