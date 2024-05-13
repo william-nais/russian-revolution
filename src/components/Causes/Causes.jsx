@@ -16,36 +16,36 @@ const Causes = () => {
 
 
   {/* EconomicHardships */}
-  const openEconomicHardshipsOverlay = () => {
-    setEconomicHardshipsOverlay(true);
-  }
+  // const openEconomicHardshipsOverlay = () => {
+  //   setEconomicHardshipsOverlay(true);
+  // }
 
   const closeEconomicHardshipsOverlay = () => {
     setEconomicHardshipsOverlay(false);
   }
 
   {/* ConstantWar */}
-  const openConstantWarOverlay = () => {
-    setConstantWarOverlay(true);
-  }
+  // const openConstantWarOverlay = () => {
+  //   setConstantWarOverlay(true);
+  // }
 
   const closeConstantWarOverlay = () => {
     setConstantWarOverlay(false);
   }
 
   {/* WorkingConditions */}
-  const openWorkingConditionsOverlay = () => {
-    setWorkingConditionsOverlay(true);
-  }
+  // const openWorkingConditionsOverlay = () => {
+  //   setWorkingConditionsOverlay(true);
+  // }
 
   const closeWorkingConditionsOverlay = () => {
     setWorkingConditionsOverlay(false);
   }
 
   {/* Poverty */}
-  const openPovertyOverlay = () => {
-    setPovertyOverlay(true);
-  }
+  // const openPovertyOverlay = () => {
+  //   setPovertyOverlay(true);
+  // }
 
   const closePovertyOverlay = () => {
     setPovertyOverlay(false);
