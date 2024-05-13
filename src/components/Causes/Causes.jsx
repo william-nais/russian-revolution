@@ -4,7 +4,7 @@ import Overlay from '../Overlay';
 
 import Padding from '../Padding';
 
-import { causesInfo } from './causes-data'
+import { causesInfo, openEconomicHardshipsOverlay, openConstantWarOverlay, openWorkingConditionsOverlay, openPovertyOverlay } from './causes-data'
 
 const Causes = () => {
 
