@@ -6,6 +6,23 @@ import Padding from '../Padding';
 
 import { causesInfo } from './causes-data'
 
+{/* Functions */}
+export const openEconomicHardshipsOverlay = () => {
+    setEconomicHardshipsOverlay(true);
+}
+
+export const openConstantWarOverlay = () => {
+    setConstantWarOverlay(true);
+}
+
+export const openWorkingConditionsOverlay = () => {
+    setWorkingConditionsOverlay(true);
+}
+
+export const openPovertyOverlay = () => {
+    setPovertyOverlay(true);
+}
+
 const Causes = () => {
 
   const [economicHardshipsOverlay, setEconomicHardshipsOverlay] = useState(false)
@@ -16,36 +33,24 @@ const Causes = () => {
 
 
   {/* EconomicHardships */}
-  export const openEconomicHardshipsOverlay = () => {
-    setEconomicHardshipsOverlay(true);
-  }
 
   const closeEconomicHardshipsOverlay = () => {
     setEconomicHardshipsOverlay(false);
   }
 
   {/* ConstantWar */}
-  export const openConstantWarOverlay = () => {
-    setConstantWarOverlay(true);
-  }
 
   const closeConstantWarOverlay = () => {
     setConstantWarOverlay(false);
   }
 
   {/* WorkingConditions */}
-  export const openWorkingConditionsOverlay = () => {
-    setWorkingConditionsOverlay(true);
-  }
 
   const closeWorkingConditionsOverlay = () => {
     setWorkingConditionsOverlay(false);
   }
 
   {/* Poverty */}
-  export const openPovertyOverlay = () => {
-    setPovertyOverlay(true);
-  }
 
   const closePovertyOverlay = () => {
     setPovertyOverlay(false);
