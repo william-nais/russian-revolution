@@ -4,7 +4,7 @@ import Overlay from '../Overlay';
 
 import Padding from '../Padding';
 
-import { causesInfo, openEconomicHardshipsOverlay, openConstantWarOverlay, openWorkingConditionsOverlay, openPovertyOverlay } from './causes-data'
+import { causesInfo } from './causes-data'
 
 const Causes = () => {
 
@@ -16,36 +16,36 @@ const Causes = () => {
 
 
   {/* EconomicHardships */}
-  // const openEconomicHardshipsOverlay = () => {
-  //   setEconomicHardshipsOverlay(true);
-  // }
+  export const openEconomicHardshipsOverlay = () => {
+    setEconomicHardshipsOverlay(true);
+  }
 
   const closeEconomicHardshipsOverlay = () => {
     setEconomicHardshipsOverlay(false);
   }
 
   {/* ConstantWar */}
-  // const openConstantWarOverlay = () => {
-  //   setConstantWarOverlay(true);
-  // }
+  export const openConstantWarOverlay = () => {
+    setConstantWarOverlay(true);
+  }
 
   const closeConstantWarOverlay = () => {
     setConstantWarOverlay(false);
   }
 
   {/* WorkingConditions */}
-  // const openWorkingConditionsOverlay = () => {
-  //   setWorkingConditionsOverlay(true);
-  // }
+  export const openWorkingConditionsOverlay = () => {
+    setWorkingConditionsOverlay(true);
+  }
 
   const closeWorkingConditionsOverlay = () => {
     setWorkingConditionsOverlay(false);
   }
 
   {/* Poverty */}
-  // const openPovertyOverlay = () => {
-  //   setPovertyOverlay(true);
-  // }
+  export const openPovertyOverlay = () => {
+    setPovertyOverlay(true);
+  }
 
   const closePovertyOverlay = () => {
     setPovertyOverlay(false);
