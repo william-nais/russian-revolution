@@ -5,15 +5,15 @@ export const causesInfo = [{
 }, {
     id: 1,
     information: "WWI",
-    function: 'openConstantWarOverlay',
+    function: openConstantWarOverlay,
 }, {
     id: 2,
     information: "Military Defeats and Loss of Confidence",
-    function: 'openWorkingConditionsOverlay',
+    function: openWorkingConditionsOverlay,
 }, {
     id: 3,
     information: "Rise of Revolutionary Movements",
-    function: 'openPovertyOverlay',
+    function: openPovertyOverlay,
 }]
 
 // Define functions to return content for each cause
