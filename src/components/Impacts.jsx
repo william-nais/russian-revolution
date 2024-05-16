@@ -4,22 +4,22 @@ import Overlay from './Overlay'
 
 const Impacts = () => {
 
-  const [summariseOverlay, setSummariseOverlay] = useState(false)
+  // const [summariseOverlay, setSummariseOverlay] = useState(false)
 
-  {/* Summarise */}
-  const openSummariseOverlay = () => {
-    setSummariseOverlay(true)
-  }
+  // {/* Summarise */}
+  // const openSummariseOverlay = () => {
+  //   setSummariseOverlay(true)
+  // }
 
-  const closeSummariseOverlay = () => {
-    setSummariseOverlay(false)
-  }
+  // const closeSummariseOverlay = () => {
+  //   setSummariseOverlay(false)
+  // }
 
-  const contentInfo = (
-    <>
-      <div></div>
-    </>
-  );
+  // const contentInfo = (
+  //   <>
+  //     <div></div>
+  //   </>
+  // );
 
   return (
     <div>
@@ -37,9 +37,9 @@ const Impacts = () => {
 
         <br></br>
 
-        <button onClick={openSummariseOverlay}>Learn more</button>
+{/*         <button onClick={openSummariseOverlay}>Learn more</button>
 
-        <Overlay type={summariseOverlay} function={closeSummariseOverlay} heading="Impacts of the Russian Revolution" content={contentInfo}/>
+        <Overlay type={summariseOverlay} function={closeSummariseOverlay} heading="Impacts of the Russian Revolution" content={contentInfo}/> */}
     </div>
   )
 }
