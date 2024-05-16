@@ -6,23 +6,6 @@ import Padding from '../Padding';
 
 import { causesInfo } from './causes-data'
 
-{/* Functions */}
-export const openEconomicHardshipsOverlay = () => {
-    setEconomicHardshipsOverlay(true);
-}
-
-export const openConstantWarOverlay = () => {
-    setConstantWarOverlay(true);
-}
-
-export const openWorkingConditionsOverlay = () => {
-    setWorkingConditionsOverlay(true);
-}
-
-export const openPovertyOverlay = () => {
-    setPovertyOverlay(true);
-}
-
 const Causes = () => {
 
   const [economicHardshipsOverlay, setEconomicHardshipsOverlay] = useState(false)
@@ -30,6 +13,23 @@ const Causes = () => {
   const [workingConditionsOverlay, setWorkingConditionsOverlay] = useState(false)
   const [povertyOverlay, setPovertyOverlay] = useState(false)
   const [tsarOverlay, setTsarOverlay] = useState(false)
+
+    {/* Functions */}
+    const openEconomicHardshipsOverlay = () => {
+        setEconomicHardshipsOverlay(true);
+    }
+    
+    const openConstantWarOverlay = () => {
+        setConstantWarOverlay(true);
+    }
+    
+    const openWorkingConditionsOverlay = () => {
+        setWorkingConditionsOverlay(true);
+    }
+    
+    const openPovertyOverlay = () => {
+        setPovertyOverlay(true);
+    }
 
 
   {/* EconomicHardships */}
@@ -56,13 +56,6 @@ const Causes = () => {
     setPovertyOverlay(false);
   }
 
-
-  const causes = causesInfo.map(cause => 
-    <li key={cause.id} onClick={cause.function} style={{ cursor: "pointer" }}>
-      {cause.information}
-    </li>
-  )
-
   return (
     <div>
       <h1>Causes</h1>
@@ -72,7 +65,10 @@ const Causes = () => {
 
       <div style={{ textAlign: "center" }}>
         <ul style={{ display: "inline-block", textAlign: "left" }}>
-          {causes}
+          <li>{causesInfo[0].information}</li>
+            <li>{causesInfo[1].information}</li>
+            <li>{causesInfo[2].information}</li>
+            <li>{causesInfo[3].information}</li>
         </ul>
       </div>
 
