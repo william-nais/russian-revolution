@@ -48,6 +48,10 @@ const App = () => {
 
           <Bibliography />
         </div>
+
+        <hr></hr>
+        <h1>Developed (made by)</h1>
+        <h3>Hui (William) Xu</h3>
       </div>
     </>
   );
