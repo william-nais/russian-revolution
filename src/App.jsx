@@ -51,6 +51,7 @@ const App = () => {
 
         <br></br>
         <h1>Developed (made by)</h1>
+        <Padding value="5px"/>
         <p>Hui (William) Xu</p>
 
         <Padding value="25px"/>
