@@ -33,6 +33,7 @@
   height: 100vh; /* Adjust as needed for vertical centering */
   font-size:4em;
   color:crimson;
+  z-index: 2;
 }
 
 /* .cover {
