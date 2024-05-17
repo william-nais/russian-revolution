@@ -11,6 +11,8 @@
   height: 100vh; /* Half of the viewport height */
   overflow: hidden; /* Hide overflow content */
   border:none;
+  z-index: 2;
+  text-align: center;
 }
 
 /* .background {
@@ -33,7 +35,6 @@
   height: 100vh; /* Adjust as needed for vertical centering */
   font-size:4em;
   color:crimson;
-  z-index: 2;
 }
 
 /* .cover {
