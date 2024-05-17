@@ -49,9 +49,11 @@ const App = () => {
           <Bibliography />
         </div>
 
-        <hr></hr>
+        <br></br>
         <h1>Developed (made by)</h1>
-        <h3>Hui (William) Xu</h3>
+        <p>Hui (William) Xu</p>
+
+        <Padding value="25px"/>
       </div>
     </>
   );
