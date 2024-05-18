@@ -1,0 +1,46 @@
+name: Issue Creation Check
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  check-issue-creator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if issue creator is a contributor or has created a pull request
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const creator = context.payload.issue.user.login;
+            const { data: contributions } = await github.repos.listContributors({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+
+            const { data: pullRequests } = await github.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100,
+            });
+
+            const isContributor = contributions.some(contributor => contributor.login === creator);
+            const hasPullRequest = pullRequests.some(pr => pr.user.login === creator);
+
+            if (!isContributor && !hasPullRequest) {
+              github.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+                state: 'closed',
+              });
+
+              github.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.issue.number,
+                body: 'This issue was closed because the creator is not a contributor or has not created a pull request before.',
+              });
+            }
