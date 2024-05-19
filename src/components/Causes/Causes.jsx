@@ -65,10 +65,10 @@ const Causes = () => {
 
       <div style={{ textAlign: "center" }}>
         <ul style={{ display: "inline-block", textAlign: "left" }}>
-          <li onClick={openEconomicHardshipsOverlay}>{causesInfo[0].information}</li>
-            <li onClick={openConstantWarOverlay}>{causesInfo[1].information}</li>
-            <li onClick={openWorkingConditionsOverlay}>{causesInfo[2].information}</li>
-            <li onClick={openPovertyOverlay}>{causesInfo[3].information}</li>
+          <li onClick={openEconomicHardshipsOverlay} style={{ cursor: "pointer" }}>{causesInfo[0].information}</li>
+            <li onClick={openConstantWarOverlay} style={{ cursor: "pointer" }}>{causesInfo[1].information}</li>
+            <li onClick={openWorkingConditionsOverlay} style={{ cursor: "pointer" }}>{causesInfo[2].information}</li>
+            <li onClick={openPovertyOverlay} style={{ cursor: "pointer" }}>{causesInfo[3].information}</li>
         </ul>
       </div>
 
